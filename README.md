@@ -1,10 +1,17 @@
 # nudge
 
-`write` your buddies a random message
+`write` your buddies a random message. `nudge` works by checking who's online
+(via `who`), filtering it to users you specify, and sending each one of them a
+randomly selected message (via `write`) from an array of messages you specify.
+
+> **NOTE:** this script is developed in an envrionment with RHEL 7.2 and bash
+> 4.2.46. It _should_ work in other environments, but your mileage may vary.
 
 ## Usage
 
-You'll want to configure the `$users` variable to specify the usernames that
+To execute, simply do `/path/to/nudge`.
+
+You'll want to configure the `$users` variable to specify the usernames that 
 you're looking to message. Since it's being piped directly to `grep` you'll
 want to delimit them with pipes (`|`) for a proper regex.
 
