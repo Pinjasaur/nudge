@@ -1,25 +1,29 @@
 #!/bin/bash
 
+# The users you'd like to send a message to
 users='pfeschla|galord|pjbirr|rlcarpen'
+
+# The different messages available to send
 phrases=(
-	"Hey, hey you." \
-	"All hail RMS." \
-	"<something funny>" \
-	"Are you sitting on F5? Because your butt is refreshing." \
-	"Praise Linus Torvalds." \
-	"There is no cloud, it's just someone else's computer." \
+	"Hey, hey you."
+	"All hail RMS."
+	"<something funny>"
+	"Are you sitting on F5? Because your butt is refreshing."
+	"Praise Linus Torvalds."
+	"There is no cloud, it's just someone else's computer."
 )
 
 online=$(
-	who \
-	| tail -n +1 \
-	| grep -E $users \
-	| sed -r 's:(\w+)\s+(pts/[0-9]+).*:\1@\2:'
+	who | # Check who's online
+	tail -n +1 | # Skip the first line of output
+	grep -E $users | # Only want the specified users
+	sed -r 's:(\w+)\s+(pts/[0-9]+).*:\1@\2:' # Only want username and TTY
 )
 
 for user in $online
 do
-	phrase=${phrases[$RANDOM % ${#phrases[@]}]} 
+	# Grab a random phrase
+	phrase=${phrases[$RANDOM % ${#phrases[@]}]}
 	write $(echo $user | tr "@" " ") <<< $phrase
 done
 
