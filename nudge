@@ -24,7 +24,7 @@ for user in $online
 do
 	# Grab a random phrase
 	phrase=${phrases[$RANDOM % ${#phrases[@]}]}
-	write $(echo $user | tr "@" " ") <<< $phrase
+	write $(echo $user | sed 's/@/ /') <<< $phrase
 done
 
 exit 0
