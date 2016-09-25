@@ -10,8 +10,8 @@ want to delimit them with pipes (`|`) for a proper regex.
 
 The messages being sent can be configured in the `$phrases` variable.
 
-If you'd like to extra persistant and annoying you can setup the script to run 
-periodically as a cronjob.
+If you'd like to be extra persistent and annoying you can setup the script to
+run periodically as a cronjob.
 
 ## Contributing
 
@@ -21,7 +21,7 @@ request my way.
 ## Thanks
 
 Shoutout to [@pjbirr](https://github.com/pjbirr) and
-[@galordmtu](https://github.com/pjbirr) for helping with testing and such.
+[@galordmtu](https://github.com/galordmtu) for helping with testing and such.
 
 ## License
 
