@@ -1,0 +1,26 @@
+#!/bin/bash
+
+users='pfeschla|galord|pjbirr|rlcarpen'
+phrases=(
+	"Hey, hey you." \
+	"All hail RMS." \
+	"<something funny>" \
+	"Are you sitting on F5? Because your butt is refreshing." \
+	"Praise Linus Torvalds." \
+	"There is no cloud, it's just someone else's computer." \
+)
+
+online=$(
+	who \
+	| tail -n +1 \
+	| grep -E $users \
+	| sed -r 's:(\w+)\s+(pts/[0-9]+).*:\1@\2:'
+)
+
+for user in $online
+do
+	phrase=${phrases[$RANDOM % ${#phrases[@]}]} 
+	write $(echo $user | tr "@" " ") <<< $phrase
+done
+
+exit 0
