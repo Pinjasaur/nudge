@@ -11,6 +11,10 @@ phrases=(
 	"Are you sitting on F5? Because your butt is refreshing."
 	"Praise Linus Torvalds."
 	"There is no cloud, it's just someone else's computer."
+	"You can't include <unistd.h> without STUD."
+	"Baby you make my stack overflow."
+	"chown me you"
+	"chmod 69 ~you"
 )
 
 online=$(
