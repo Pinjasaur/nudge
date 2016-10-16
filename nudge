@@ -23,6 +23,12 @@ phrases=(
 	"Thou wayward fool-born miscreant!"
 	"You scullion! You rampallian! You fustilarian! I'll tickle your catastrophe!"
 	"Thou impertinent beef-witted blind-worm!"
+	"The mitochondria is the powerhouse of the cell"
+	"guardian > colossus"
+	"I <3 forking children"
+	"I used to be a programmer like you, then I took a segfault in the main()"
+	"#tenacity"
+	"#tenashitty"
 )
 
 online=$(
