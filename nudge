@@ -37,6 +37,7 @@ phrases=(
 	"You've cat to be kitten me right meow."
 	"Hakuna your tatas."
 	"coreOS are my favorite cookie."
+	"Knock knock... Who's there? Recursivity. Recursivity who? Knock knock..."
 )
 
 online=$(
