@@ -38,6 +38,8 @@ phrases=(
 	"Hakuna your tatas."
 	"coreOS are my favorite cookie."
 	"Knock knock... Who's there? Recursivity. Recursivity who? Knock knock..."
+	"To understand what recursion is, you must first understand recursion."
+	"Hip hip[];"
 )
 
 online=$(
