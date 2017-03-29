@@ -42,6 +42,7 @@ phrases=(
 	"Hip hip[];"
 	"175 is hexadecimal AF."
 	"We may both be Monitors, but at least I'm not of type Hoare."
+	"The only STDs I have are stdin and stdout."
 )
 
 online=$(
