@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # The users you'd like to send a message to
-users='^(pfeschla|galord|pjbirr|rlcarpen|mtmille1|loganj|cjsumner|pjdoughe|dhappleg|kparneso)'
+users='^(pfeschla|galord|pjbirr|rlcarpen|mtmille1|loganj|cjsumner|pjdoughe|dhappleg|kparneso|esleopol)'
 
 # The different messages available to send
 phrases=(
